@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jestin G Johnson | Portfolio</title>
+    <meta name="description" content="Jestin G Johnson - Graphic Designer & Photo Editor Portfolio">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+
+<body >
+
+    <!-- INTRO ANIMATION -->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="intro-logo">J</span>
+            <span class="intro-logo">E</span>
+            <span class="intro-logo">S</span>
+            <span class="intro-logo">T</span>
+            <span class="intro-logo">I</span>
+            <span class="intro-logo">N</span>
+        </h1>
+    </div>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./Assets/SIG.png" alt="JGJ Logo" onclick="location.href='./#profile'">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <nav id="hamburger-nav">
+        <div class="logo">Jestin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Work</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="home-pic" src="./Assets/JESTY.png" alt="Jestin G Johnson">
+        </div>
+
+        <div class="section__text show">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jestin G Johnson</h1>
+            <p class="section__text__p2">Graphic Designer & Photo Editor</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                        onclick="window.open('./Assets/jestin.pdf')">
+                    Download Resume
+                </button>
+
+                <button class="btn btn-color-1"
+                        onclick="location.href='./#contact'">
+                    Get in Touch
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png"
+                     alt="LinkedIn"
+                     class="icon"
+                     onclick="window.open('https://www.linkedin.com/in/heyjesty/', '_blank')">
+
+                <img src="./Assets/insta.png"
+                     alt="Instagram"
+                     class="icon"
+                     onclick="window.open('https://www.instagram.com/moodygrammer/', '_blank')">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <p class="section__text">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Assets/1.jpg.jpeg"
+                     alt="Jestin Profile Picture"
+                     class="about-pic">
+            </div>
+
+            <div class="about-details-container">
+
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img src="./Assets/experience.png"
+                             alt="Experience"
+                             class="icon">
+                        <h3>Experience</h3>
+                        <p><b>2+Years In Aligntax</b><br>Graphic Designing<br>Photo Editing</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./Assets/graduation.png"
+                             alt="Education"
+                             class="icon">
+                        <h3>Education</h3>
+                        <p><b>Bachelor of Computer Applications</b><br>
+                           Kerala University</p>
+                    </div>
+
+                </div>
+
+                <div class="text-container">
+                    <p>
+                        I’m a passionate Graphic Designer and Photo Editor with a strong eye for detail and color aesthetics.
+                        I specialize in poster design, branding, professional photo retouching and cinematic color grading.
+                        My goal is to create visually impactful designs that connect with people and elevate brands.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <p class="section__text">Explore My</p>
+        <h1 class="title">Skills</h1>
+
+        <div class="skills-details-container">
+            <div class="sk-details-container">
+
+                <h2 class="skills-subtitle">Design</h2>
+
+                <div class="article-container">
+                    <article>
+                        <img src="./Assets/checkmark.png" class="icon" alt="">
+                        <div>
+                            <h3>Adobe Photoshop</h3>
+                            <p>Advanced</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./Assets/checkmark.png" class="icon" alt="">
+                        <div>
+                            <h3>Adobe Illustrator</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./Assets/checkmark.png" class="icon" alt="">
+                        <div>
+                            <h3>Canva</h3>
+                            <p>Advanced</p>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="skills-subtitle">Editing</h2>
+
+                <div class="article-container">
+                    <article>
+                        <img src="./Assets/checkmark.png" class="icon" alt="">
+                        <div>
+                            <h3>Adobe Photoshop</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./Assets/checkmark.png" class="icon" alt="">
+                        <div>
+                            <h3>Lightroom</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <p class="section__text">Browse My Recent</p>
+        <h1 class="title">Work</h1>
+
+        <div class="work-list">
+
+            <a href="./Assets/apple.png" target="_blank">
+                <div class="work">
+                    <img src="./Assets/apple.png" alt="The Door To Heaven">
+                    <div class="layer"><h3>S 7</h3></div>
+                </div>
+            </a>
+
+            <a href="./Assets/hoddie.png" target="_blank">
+                <div class="work">
+                    <img src="./Assets/hoddie.png" alt="Sukoon">
+                    <div class="layer"><h3>HODDIE</h3></div>
+                </div>
+            </a>
+
+            <a href="./Assets/ktm.png" target="_blank">
+                <div class="work">
+                    <img src="./Assets/ktm.png  " alt="Falling - Light">
+                    <div class="layer"><h3>KTM</h3></div>
+                </div>
+            </a>
+               <a href="https://sageresearch.oneteamus.com/" target="_blank">
+                <div class="work">
+                    <img src="./Assets/Sage.png  " alt="Falling - Light">
+                    <div class="layer"><h3>Sage</h3></div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <p class="section__text">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+                <a href="mailto:jestinjohnson1@gmail.com">
+                    <img src="./Assets/email.png" class="icon contact-icon" alt="">
+                    <p>jestinjohnson1@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/heyjesty/" target="_blank">
+                    <img src="./Assets/linkedin.png" class="icon contact-icon" alt="">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+
+            <div class="contact-info-container">
+                <a href="https://www.instagram.com/moodygrammer/" target="_blank">
+                    <img src="./Assets/insta.png" class="icon contact-icon" alt="">
+                    <p>Instagram</p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright © 2026 Jestin G Johnson. All Rights Reserved.</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+
+</body>
+</html>
