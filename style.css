@@ -1135,13 +1135,7 @@ section.reveal {
     font-family: 'Montserrat';
 }
 
-/* WORK CATEGORY */
-.work-category {
-    font-size: 0.9rem;
-    color: purple;
-    margin-top: 0.5rem;
-    font-weight: 400;
-}
+
 
 /* TESTIMONIALS SECTION */
 #testimonials {
@@ -1255,5 +1249,430 @@ section.reveal {
 @media (max-width: 480px) {
     .stats-container {
         grid-template-columns: 1fr;
+    }
+}
+/* ======================================
+   NEW STYLES TO ADD TO YOUR style.css
+   Copy everything below and paste at the END of your existing style.css
+   ====================================== */
+
+/* PROFILE TAGLINE */
+.profile-tagline {
+    font-size: 1rem;
+    color: #a9a69e;
+    margin-top: 0.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* STATS SECTION */
+#stats {
+    padding: 3rem 5%;
+    background-color: #141414;
+    background-image: url('./Assets/black.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(10, 10, 10, 0.6);
+    border-radius: 1rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    border-color: purple;
+    box-shadow: 0 10px 30px rgba(128, 0, 128, 0.3);
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: purple;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #d2cdc1;
+    font-weight: 400;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+    position: relative;
+    padding: 5rem 5%;
+    background-color: #0c0c0c;
+    background-image: url('./Assets/bgpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins";
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 3rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    border-color: purple;
+    box-shadow: 0 10px 40px rgba(128, 0, 128, 0.2);
+    transform: translateY(-5px);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title-block h3 {
+    font-size: 1.8rem;
+    color: purple;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    color: #d2cdc1;
+    font-weight: 400;
+}
+
+.experience-duration {
+    background: rgba(128, 0, 128, 0.2);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    color: #d2cdc1;
+    border: 1px solid purple;
+    font-family: 'Montserrat';
+}
+
+.experience-description {
+    color: #a9a69e;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.achievements-heading {
+    color: #d2cdc1;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.achievements-list li {
+    color: #a9a69e;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.achievements-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: purple;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.achievements-list li strong {
+    color: #d2cdc1;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-tag {
+    background: rgba(128, 0, 128, 0.2);
+    color: #d2cdc1;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(128, 0, 128, 0.4);
+    font-family: 'Montserrat';
+}
+
+/* PROJECTS SECTION UPDATES */
+.projects-category {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    color: purple;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.work-category {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+/* DEVELOPMENT PROJECTS GRID */
+.dev-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.dev-project-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-project-card:hover {
+    border-color: purple;
+    box-shadow: 0 10px 40px rgba(128, 0, 128, 0.2);
+    transform: translateY(-5px);
+}
+
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.dev-project-card h3 {
+    color: #d2cdc1;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: #a9a69e;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+    background: rgba(128, 0, 128, 0.2);
+    color: #d2cdc1;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(128, 0, 128, 0.3);
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(210, 205, 193, 0.2);
+    padding-top: 1.5rem;
+    margin-top: auto;
+}
+
+.duration {
+    color: #a9a69e;
+    font-size: 0.9rem;
+}
+
+.project-link {
+    color: purple;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: #d2cdc1;
+    text-decoration: underline;
+}
+
+/* TRAINING SECTION */
+#training {
+    position: relative;
+    padding: 5rem 5%;
+    background-color: #1e1e1e;
+    background-image: url('./Assets/huji22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    font-family: "Poppins";
+}
+
+.training-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.training-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+}
+
+.training-card:hover {
+    border-color: purple;
+    box-shadow: 0 10px 40px rgba(128, 0, 128, 0.2);
+    transform: translateY(-5px);
+}
+
+.training-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.training-card h3 {
+    color: purple;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.training-org {
+    color: #d2cdc1;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.training-desc {
+    color: #a9a69e;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* CONTACT SUBTITLE */
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #a9a69e;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE UPDATES */
+@media (max-width: 1024px) {
+    .dev-projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .experience-card {
+        padding: 2rem;
+    }
+    
+    .training-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .dev-projects-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .profile-tagline {
+        font-size: 0.9rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dev-project-card {
+        padding: 1.5rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
     }
 }
