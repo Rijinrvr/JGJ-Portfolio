@@ -948,3 +948,312 @@ section.reveal {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* ======================================
+   NEW STYLES TO ADD TO YOUR style.css
+   ====================================== */
+
+/* PROFILE TAGLINE */
+.profile-tagline {
+    font-size: 1rem;
+    color: #a9a69e;
+    margin-top: 0.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* STATS SECTION */
+#stats {
+    padding: 3rem 5%;
+    background-color: #141414;
+    background-image: url('./Assets/black.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(10, 10, 10, 0.6);
+    border-radius: 1rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    border-color: purple;
+    box-shadow: 0 10px 30px rgba(128, 0, 128, 0.3);
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: purple;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #d2cdc1;
+    font-weight: 400;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+    position: relative;
+    padding: 5rem 5%;
+    background-color: #0c0c0c;
+    background-image: url('./Assets/bgpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins";
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.experience-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 3rem;
+    border: 1px solid #d2cdc1;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    border-color: purple;
+    box-shadow: 0 10px 40px rgba(128, 0, 128, 0.2);
+    transform: translateY(-5px);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title-block h3 {
+    font-size: 1.8rem;
+    color: purple;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    color: #d2cdc1;
+    font-weight: 400;
+}
+
+.experience-duration {
+    background: rgba(128, 0, 128, 0.2);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    color: #d2cdc1;
+    border: 1px solid purple;
+    font-family: 'Montserrat';
+}
+
+.experience-description {
+    color: #a9a69e;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.achievements-heading {
+    color: #d2cdc1;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.achievements-list li {
+    color: #a9a69e;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.achievements-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: purple;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.achievements-list li strong {
+    color: #d2cdc1;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-tag {
+    background: rgba(128, 0, 128, 0.2);
+    color: #d2cdc1;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(128, 0, 128, 0.4);
+    font-family: 'Montserrat';
+}
+
+/* WORK CATEGORY */
+.work-category {
+    font-size: 0.9rem;
+    color: purple;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+    position: relative;
+    padding: 5rem 5%;
+    background-color: #1e1e1e;
+    background-image: url('./Assets/huji22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    font-family: "Poppins";
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.testimonial-card {
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    border: 1px solid #d2cdc1;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: purple;
+    box-shadow: 0 10px 40px rgba(128, 0, 128, 0.2);
+    transform: translateY(-5px);
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: purple;
+    opacity: 0.3;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-text {
+    color: #a9a69e;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    font-size: 1.05rem;
+}
+
+.testimonial-author {
+    border-top: 1px solid rgba(210, 205, 193, 0.2);
+    padding-top: 1.5rem;
+}
+
+.testimonial-author h4 {
+    color: #d2cdc1;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.testimonial-author p {
+    color: purple;
+    font-size: 0.9rem;
+}
+
+/* CONTACT SUBTITLE */
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #a9a69e;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE UPDATES */
+@media (max-width: 768px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .experience-card {
+        padding: 2rem;
+    }
+    
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-tagline {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+}
