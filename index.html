@@ -1,576 +1,908 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jestin G Johnson | Portfolio</title>
-    <meta name="description" content="Jestin G Johnson - Junior Graphic Designer at Aligntax with expertise in Adobe Photoshop, social media design, and branding. Also skilled in Python Django Full Stack Development.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jestin G Johnson | Graphic Designer</title>
+    <meta
+      name="description"
+      content="Jestin G Johnson — Graphic Designer specializing in brand identity, social media design, poster design, and visual storytelling. Based in Kerala, India."
+    />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-
-<body >
+  <body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
     <!-- INTRO ANIMATION -->
     <div class="intro">
+      <div class="intro-inner">
         <h1 class="logo-header">
-            <span class="intro-logo">J</span>
-            <span class="intro-logo">E</span>
-            <span class="intro-logo">S</span>
-            <span class="intro-logo">T</span>
-            <span class="intro-logo">I</span>
-            <span class="intro-logo">N</span>
+          <span class="intro-logo">J</span><span class="intro-logo">E</span
+          ><span class="intro-logo">S</span><span class="intro-logo">T</span
+          ><span class="intro-logo">I</span><span class="intro-logo">N</span>
         </h1>
+        <p class="intro-subtitle">Graphic Designer</p>
+      </div>
     </div>
 
     <!-- DESKTOP NAVIGATION -->
     <nav id="desktop-nav">
-        <div class="logo">
-            <img src="./Assets/SIG.png" alt="JGJ Logo" onclick="location.href='./#profile'">
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">
+        <img
+          src="./Assets/SIG.png"
+          alt="JGJ Logo"
+          onclick="location.href = './#profile'"
+        />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- MOBILE NAVIGATION -->
     <nav id="hamburger-nav">
-        <div class="logo">Jestin</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
-                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
-                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
-            </div>
+      <div class="logo">Jestin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+          <li><a href="#work" onclick="togglemenu()">Work</a></li>
+          <li><a href="#process" onclick="togglemenu()">Process</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
 
-    <!-- PROFILE SECTION -->
+    <!-- HERO / PROFILE SECTION -->
     <section id="profile">
-        <div class="section__pic-container">
-            <img class="home-pic" src="./Assets/JESTY.png" alt="Jestin G Johnson">
+      <div class="hero-content">
+        <div class="hero-tag">✦ Available for freelance</div>
+        <h1 class="hero-name">
+          <span class="hero-name-line">Jestin G</span>
+          <span class="hero-name-line italic">Johnson</span>
+        </h1>
+        <p class="hero-role">Graphic Designer &amp; Visual Storyteller</p>
+        <p class="hero-bio">
+          Crafting bold, purposeful design that speaks — through brand identity,
+          social media creatives, poster design, and visual strategy.
+        </p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-primary"
+            onclick="window.open('./Assets/jestin.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-outline"
+            onclick="location.href = './#contact'"
+          >
+            Let's Talk
+          </button>
         </div>
 
-        <div class="section__text show">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Jestin G Johnson</h1>
-            <p class="section__text__p2">Junior Graphic Designer & Developer</p>
-            <p class="profile-tagline">Creative designer specializing in social media graphics, posters, and branding with additional expertise in Python Django Full Stack Development</p>
-
-            <div class="btn-container">
-                <button class="btn btn-color-2"
-                        onclick="window.open('./Assets/jestin.pdf')">
-                    Download Resume
-                </button>
-
-                <button class="btn btn-color-1"
-                        onclick="location.href='./#contact'">
-                    Hire Me
-                </button>
-            </div>
-
-            <div id="socials-container">
-                <img src="./Assets/linkedin.png"
-                     alt="LinkedIn"
-                     class="icon"
-                     onclick="window.open('https://www.linkedin.com/in/heyjesty/', '_blank')">
-
-                <img src="./Assets/insta.png"
-                     alt="Instagram"
-                     class="icon"
-                     onclick="window.open('https://www.instagram.com/moodygrammer/', '_blank')">
-            </div>
+        <div id="socials-container">
+          <a
+            href="https://www.linkedin.com/in/heyjesty/"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/moodygrammer/"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <img src="./Assets/insta.png" alt="Instagram" class="icon" />
+          </a>
         </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img
+            class="home-pic"
+            src="./Assets/JESTY.png"
+            alt="Jestin G Johnson — Graphic Designer"
+          />
+        </div>
+        <div class="hero-accent-ring"></div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
     </section>
 
     <!-- STATS SECTION -->
     <section id="stats">
-        <div class="stats-container">
-            <div class="stat-box">
-                <h3 class="stat-number">1+</h3>
-                <p class="stat-label">Years Experience</p>
-            </div>
-            <div class="stat-box">
-                <h3 class="stat-number">3</h3>
-                <p class="stat-label">Major Projects</p>
-            </div>
-            <div class="stat-box">
-                <h3 class="stat-number">2</h3>
-                <p class="stat-label">Companies Worked</p>
-            </div>
-            <div class="stat-box">
-                <h3 class="stat-number">5+</h3>
-                <p class="stat-label">Skills Mastered</p>
-            </div>
+      <div class="stats-container">
+        <div class="stat-box">
+          <h3 class="stat-number">1+</h3>
+          <p class="stat-label">Years of Design Experience</p>
         </div>
+        <div class="stat-box">
+          <h3 class="stat-number">50+</h3>
+          <p class="stat-label">Design Pieces Created</p>
+        </div>
+        <div class="stat-box">
+          <h3 class="stat-number">5+</h3>
+          <p class="stat-label">Design Tools Mastered</p>
+        </div>
+        <div class="stat-box">
+          <h3 class="stat-number">2</h3>
+          <p class="stat-label">Companies Worked With</p>
+        </div>
+      </div>
     </section>
+
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Brand Identity</span><span class="marquee-dot">✦</span>
+        <span>Poster Design</span><span class="marquee-dot">✦</span>
+        <span>Social Media</span><span class="marquee-dot">✦</span>
+        <span>Typography</span><span class="marquee-dot">✦</span>
+        <span>Product Visuals</span><span class="marquee-dot">✦</span>
+        <span>Color Theory</span><span class="marquee-dot">✦</span>
+        <span>Adobe Photoshop</span><span class="marquee-dot">✦</span>
+        <span>Visual Storytelling</span><span class="marquee-dot">✦</span>
+        <span>Brand Identity</span><span class="marquee-dot">✦</span>
+        <span>Poster Design</span><span class="marquee-dot">✦</span>
+        <span>Social Media</span><span class="marquee-dot">✦</span>
+        <span>Typography</span><span class="marquee-dot">✦</span>
+        <span>Product Visuals</span><span class="marquee-dot">✦</span>
+        <span>Color Theory</span><span class="marquee-dot">✦</span>
+        <span>Adobe Photoshop</span><span class="marquee-dot">✦</span>
+        <span>Visual Storytelling</span><span class="marquee-dot">✦</span>
+      </div>
+    </div>
 
     <!-- ABOUT SECTION -->
     <section id="about">
-        <p class="section__text">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+      <div class="about-label">Get To Know Me</div>
+      <h1 class="section-title">About Me</h1>
 
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./Assets/1.jpg.jpeg"
-                     alt="Jestin Profile Picture"
-                     class="about-pic">
-            </div>
-
-            <div class="about-details-container">
-
-                <div class="about-containers">
-
-                    <div class="details-container">
-                        <img src="./Assets/experience.png"
-                             alt="Experience"
-                             class="icon">
-                        <h3>Experience</h3>
-                        <p><b>Junior Graphic Designer</b><br>Aligntax Consultancy <Br/> (2024 - Present)<br><br><b>Junior Executive Consultant</b><br>Quadance Technologies <br/> (2023 - 2024)</p>
-                    </div>
-
-                    <div class="details-container">
-                        <img src="./Assets/graduation.png"
-                             alt="Education"
-                             class="icon">
-                        <h3>Education</h3>
-                        <p><b>Bachelor of Computer Applications</b><br>
-                           Manipal University Jaipur<br>2023 - Present</p>
-                    </div>
-
-                </div>
-
-                <div class="text-container">
-                    <p>
-                        Creative and detail-oriented Junior Graphic Designer with hands-on experience in designing digital creatives 
-                        using Adobe Photoshop and a strong foundation in visual design principles. Passionate about creating engaging 
-                        social media graphics, posters, banners, and marketing materials that align with brand identity.
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <strong>What I bring:</strong> A unique blend of creative design skills and technical development expertise. 
-                        Proficient in Adobe Photoshop, Adobe Illustrator, and Python Django Full Stack Development. Eager to contribute 
-                        to collaborative creative teams and grow as a professional designer and developer.
-                    </p>
-                </div>
-
-            </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrap">
+            <img
+              src="./Assets/1.jpg.jpeg"
+              alt="Jestin G Johnson"
+              class="about-pic"
+            />
+            <div class="about-img-deco"></div>
+          </div>
         </div>
+
+        <div class="about-text-col">
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎨</div>
+              <h3>Experience</h3>
+              <p>
+                <strong>Junior Graphic Designer</strong><br />
+                Aligntax Consultancy<br />
+                <em>2024 – Present</em>
+              </p>
+              <p style="margin-top: 0.8rem">
+                <strong>Junior Executive Consultant</strong><br />
+                Quadance Technologies<br />
+                <em>Nov 2023 – Jan 2024</em>
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <h3>Education</h3>
+              <p>
+                <strong>Bachelor of Computer Applications</strong><br />
+                Manipal University Jaipur<br />
+                <em>2023 – Present</em>
+              </p>
+            </div>
+          </div>
+
+          <div class="about-bio">
+            <p>
+              I'm a creative and detail-oriented graphic designer with hands-on
+              experience building digital creatives that resonate. I'm driven by
+              the belief that good design isn't just beautiful — it
+              communicates, converts, and connects.
+            </p>
+            <p>
+              My specialties include <strong>social media graphics</strong>,
+              <strong>poster &amp; banner design</strong>,
+              <strong>brand identity</strong>, and <strong>typography</strong>.
+              I work primarily in Adobe Photoshop and Illustrator, always
+              keeping the audience and brand voice at the heart of every design
+              decision.
+            </p>
+            <p>
+              I'm passionate about staying current with design trends,
+              experimenting with composition, and creating work that makes
+              people stop scrolling.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience">
-        <p class="section__text">My Professional Journey</p>
-        <h1 class="title">Experience</h1>
+      <div class="about-label">My Professional Journey</div>
+      <h1 class="section-title">Experience</h1>
 
-        <div class="experience-container">
-            
-            <!-- Current Role -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-title-block">
-                        <h3>Junior Graphic Designer</h3>
-                        <p class="company-name">Aligntax Consultancy | Kollam</p>
-                    </div>
-                    <div class="experience-duration">2024 - Present</div>
-                </div>
-
-                <div class="experience-content">
-                    <p class="experience-description">
-                        Creating impactful digital designs for clients while maintaining brand consistency and meeting 
-                        creative requirements across multiple projects.
-                    </p>
-
-                    <h4 class="achievements-heading">Key Responsibilities & Achievements:</h4>
-                    <ul class="achievements-list">
-                        <li>Designed <strong>social media posts, posters, banners, and promotional creatives</strong> for personal and practice projects</li>
-                        <li>Created visually appealing layouts using <strong>typography, color theory, and composition principles</strong></li>
-                        <li>Adapted designs based on feedback to meet <strong>creative and brand requirements</strong></li>
-                        <li>Ensured <strong>consistency across all design assets</strong> maintaining brand identity</li>
-                        <li>Successfully managed <strong>multiple design tasks while meeting tight deadlines</strong></li>
-                        <li>Applied visual design principles to create engaging content that resonates with target audiences</li>
-                    </ul>
-
-                    <div class="tech-stack">
-                        <span class="tech-tag">Adobe Photoshop</span>
-                        <span class="tech-tag">Adobe Illustrator</span>
-                        <span class="tech-tag">Typography</span>
-                        <span class="tech-tag">Color Theory</span>
-                        <span class="tech-tag">Brand Design</span>
-                    </div>
-                </div>
+      <div class="experience-container">
+        <!-- Current Role -->
+        <div class="experience-card">
+          <div class="exp-top-bar"></div>
+          <div class="experience-header">
+            <div class="experience-title-block">
+              <span class="exp-badge current">Current</span>
+              <h3>Junior Graphic Designer</h3>
+              <p class="company-name">
+                Aligntax Consultancy &nbsp;·&nbsp; Kollam, Kerala
+              </p>
             </div>
+            <div class="experience-duration">2024 – Present</div>
+          </div>
 
-            <!-- Previous Role -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-title-block">
-                        <h3>Junior Executive Consultant</h3>
-                        <p class="company-name">Quadance Technologies | Thiruvananthapuram</p>
-                    </div>
-                    <div class="experience-duration">Nov 2023 - Jan 2024</div>
-                </div>
+          <div class="experience-content">
+            <p class="experience-description">
+              Creating impactful digital design assets for the company while
+              maintaining brand consistency and delivering creative solutions
+              across varied project briefs.
+            </p>
 
-                <div class="experience-content">
-                    <p class="experience-description">
-                        Contributed to technical operations and data management while collaborating with team members 
-                        to solve complex problems efficiently.
-                    </p>
+            <h4 class="achievements-heading">Key Responsibilities:</h4>
+            <ul class="achievements-list">
+              <li>
+                Designed
+                <strong
+                  >social media posts, promotional posters, and brand
+                  banners</strong
+                >
+                aligned with company visual identity
+              </li>
+              <li>
+                Applied
+                <strong
+                  >typography, color theory, and composition principles</strong
+                >
+                to craft engaging layouts
+              </li>
+              <li>
+                Adapted and iterated designs based on feedback to meet
+                <strong>creative and brand requirements</strong>
+              </li>
+              <li>
+                Maintained
+                <strong
+                  >visual consistency across all design touchpoints</strong
+                >
+              </li>
+              <li>
+                Managed
+                <strong>multiple simultaneous design tasks</strong> under tight
+                deadlines
+              </li>
+            </ul>
 
-                    <h4 class="achievements-heading">Key Responsibilities:</h4>
-                    <ul class="achievements-list">
-                        <li>Efficiently <strong>managed the Run Team</strong> ensuring smooth operations</li>
-                        <li>Utilized <strong>Python for data extraction</strong> and processing tasks</li>
-                        <li>Contributed to <strong>problem-solving through active collaboration</strong> with team members</li>
-                        <li>Streamlined workflows and improved operational efficiency</li>
-                    </ul>
-
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Data Extraction</span>
-                        <span class="tech-tag">Team Management</span>
-                    </div>
-                </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Adobe Photoshop</span>
+              <span class="tech-tag">Adobe Illustrator</span>
+              <span class="tech-tag">Typography</span>
+              <span class="tech-tag">Color Theory</span>
+              <span class="tech-tag">Brand Design</span>
+              <span class="tech-tag">Social Media Design</span>
             </div>
-
+          </div>
         </div>
+
+        <!-- Previous Role -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-block">
+              <h3>Junior Executive Consultant</h3>
+              <p class="company-name">
+                Quadance Technologies &nbsp;·&nbsp; Thiruvananthapuram
+              </p>
+            </div>
+            <div class="experience-duration">Nov 2023 – Jan 2024</div>
+          </div>
+
+          <div class="experience-content">
+            <p class="experience-description">
+              Contributed to technical and operational workflows, gaining
+              exposure to professional team environments and project
+              coordination.
+            </p>
+
+            <h4 class="achievements-heading">Key Responsibilities:</h4>
+            <ul class="achievements-list">
+              <li>
+                Managed the Run Team to ensure
+                <strong>smooth daily operations</strong>
+              </li>
+              <li>
+                Contributed to
+                <strong>problem-solving through active collaboration</strong>
+                with team members
+              </li>
+              <li>
+                Streamlined internal workflows and improved operational
+                efficiency
+              </li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-tag">Team Coordination</span>
+              <span class="tech-tag">Operations</span>
+              <span class="tech-tag">Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS SECTION -->
     <section id="skills">
-        <p class="section__text">Explore My</p>
-        <h1 class="title">Skills</h1>
+      <div class="about-label">What I Work With</div>
+      <h1 class="section-title">Design Skills</h1>
 
-        <div class="skills-details-container">
-            <div class="sk-details-container">
-
-                <h2 class="skills-subtitle">Design Software</h2>
-
-                <div class="article-container">
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Adobe Photoshop</h3>
-                            <p>Advanced</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Adobe Illustrator</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Typography & Color Theory</h3>
-                            <p>Advanced</p>
-                        </div>
-                    </article>
-                </div>
-
-                <h2 class="skills-subtitle">Development</h2>
-
-                <div class="article-container">
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Python & Django</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>HTML & CSS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Bootstrap & Frontend</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-
-                <h2 class="skills-subtitle">Core Competencies</h2>
-
-                <div class="article-container">
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Social Media Design</h3>
-                            <p>Advanced</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Poster & Banner Design</h3>
-                            <p>Advanced</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Brand Identity</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src="./Assets/checkmark.png" class="icon" alt="">
-                        <div>
-                            <h3>Full Stack Development</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-
+      <div class="skills-grid">
+        <!-- Software Tools -->
+        <div class="skill-category-block">
+          <h2 class="skills-category-title">
+            <span class="category-icon">🖌️</span> Software &amp; Tools
+          </h2>
+          <div class="skills-pills">
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Adobe Photoshop</div>
+              <div class="skill-pill-level">Advanced</div>
             </div>
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Adobe Illustrator</div>
+              <div class="skill-pill-level">Intermediate</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Canva</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Adobe Lightroom</div>
+              <div class="skill-pill-level">Intermediate</div>
+            </div>
+          </div>
         </div>
+
+        <!-- Design Disciplines -->
+        <div class="skill-category-block">
+          <h2 class="skills-category-title">
+            <span class="category-icon">✏️</span> Design Disciplines
+          </h2>
+          <div class="skills-pills">
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Social Media Design</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Brand Identity</div>
+              <div class="skill-pill-level">Intermediate</div>
+            </div>
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Poster &amp; Banner Design</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Product Visualization</div>
+              <div class="skill-pill-level">Intermediate</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Web Design</div>
+              <div class="skill-pill-level">Intermediate</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Foundations -->
+        <div class="skill-category-block">
+          <h2 class="skills-category-title">
+            <span class="category-icon">🎯</span> Visual Foundations
+          </h2>
+          <div class="skills-pills">
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Typography</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill featured">
+              <div class="skill-pill-label">Color Theory</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Composition &amp; Layout</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+            <div class="skill-pill">
+              <div class="skill-pill-label">Visual Hierarchy</div>
+              <div class="skill-pill-level">Advanced</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <p class="section__text">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+    <!-- WORK / PROJECTS SECTION -->
+    <section id="work">
+      <div class="about-label">Browse My Work</div>
+      <h1 class="section-title">Design Portfolio</h1>
+      <p class="section-subtext">
+        A curated selection of design projects spanning brand identity, social
+        media, and visual design.
+      </p>
 
-        <!-- Design Projects -->
-        <div class="projects-category">
-            <h2 class="category-title">Design Work</h2>
-            <div class="work-list">
+      <div class="work-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+        <button class="filter-btn" data-filter="product">Product</button>
+        <button class="filter-btn" data-filter="poster">Poster</button>
+        <button class="filter-btn" data-filter="apparel">Apparel</button>
+      </div>
 
-                <a href="./Assets/apple.png" target="_blank">
-                    <div class="work">
-                        <img src="./Assets/apple.png" alt="S7 Product Design">
-                        <div class="layer">
-                            <h3>S7 Product Design</h3>
-                            <p class="work-category">Product Visualization</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./Assets/hoddie.png" target="_blank">
-                    <div class="work">
-                        <img src="./Assets/hoddie.png" alt="Fashion Photography">
-                        <div class="layer">
-                            <h3>HODDIE Fashion</h3>
-                            <p class="work-category">Fashion Photography</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./Assets/ktm.png" target="_blank">
-                    <div class="work">
-                        <img src="./Assets/ktm.png" alt="KTM Motorsport">
-                        <div class="layer">
-                            <h3>KTM Motorsport</h3>
-                            <p class="work-category">Automotive Design</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://sageresearch.oneteamus.com/" target="_blank">
-                    <div class="work">
-                        <img src="./Assets/Sage.png" alt="Sage Research Website">
-                        <div class="layer">
-                            <h3>Sage Research</h3>
-                            <p class="work-category">Web Design</p>
-                        </div>
-                    </div>
-                </a>
-
+      <div class="work-list" id="workGrid">
+        <!-- ROW 1: Featured large + small -->
+        <a
+          href="./Assets/apple.png"
+          target="_blank"
+          class="work-item work-large"
+          data-cat="product"
+        >
+          <div class="work">
+            <img src="./Assets/apple.png" alt="S7 Product Design" />
+            <div class="layer">
+              <div class="layer-tag">Product Visualization</div>
+              <h3>S7 Product Design</h3>
+              <p>
+                Premium product mockup with cinematic lighting, depth, and
+                meticulous composition.
+              </p>
             </div>
-        </div>
+          </div>
+        </a>
 
-        <!-- Development Projects -->
-        <div class="projects-category">
-            <h2 class="category-title">Development Projects</h2>
-            <div class="dev-projects-grid">
-
-                <div class="dev-project-card">
-                    <div class="project-icon">🏥</div>
-                    <h3>HolyCross Hospital Management</h3>
-                    <p class="project-description">
-                        Comprehensive Django-based hospital management system enabling patients to schedule appointments, 
-                        manage medical records, and receive notifications. Includes features for doctors to update records 
-                        and manage schedules, improving healthcare service efficiency.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <div class="project-meta">
-                        <span class="duration">⏱ 30 Hours</span>
-                        <a href="https://github.com/heyjesty/HolyCross-Hospital-Management.git" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <div class="dev-project-card">
-                    <div class="project-icon">🎬</div>
-                    <h3>MovieGram - Movie Website</h3>
-                    <p class="project-description">
-                        Robust platform specializing in movie sales with intuitive interface for browsing, purchasing, and 
-                        streaming films. Implemented secure payment gateways, user authentication, personalized recommendations, 
-                        and a review/rating system for enhanced engagement.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">HTML/CSS</span>
-                    </div>
-                    <div class="project-meta">
-                        <span class="duration">⏱ 28 Hours</span>
-                        <a href="https://github.com/heyjesty/MovieGram.git" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <div class="dev-project-card">
-                    <div class="project-icon">🛒</div>
-                    <h3>Super-Mart E-Commerce</h3>
-                    <p class="project-description">
-                        Feature-rich e-commerce platform for fresh vegetables and fruits with user-friendly shopping cart, 
-                        secure payment processing, and order tracking. Integrated inventory management system for administrators 
-                        to manage stock levels and update product information in real-time.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <div class="project-meta">
-                        <span class="duration">⏱ 26 Hours</span>
-                        <a href="https://github.com/heyjesty/SupMart.git" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
+        <a
+          href="./Assets/blith2.png"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/blith2.png" alt="Blith Brand Identity" />
+            <div class="layer">
+              <div class="layer-tag">Brand Identity</div>
+              <h3>Blith — Brand</h3>
+              <p>
+                Logo &amp; visual identity system for Blith — minimalist, bold,
+                modern.
+              </p>
             </div>
-        </div>
+          </div>
+        </a>
 
+        <a
+          href="./Assets/Sukoon.png"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/Sukoon.png" alt="Sukoon Brand" />
+            <div class="layer">
+              <div class="layer-tag">Brand Design</div>
+              <h3>Sukoon</h3>
+              <p>
+                Calming brand identity with warm palette and considered
+                typography.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/nova.png"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/nova.png" alt="Nova Brand" />
+            <div class="layer">
+              <div class="layer-tag">Logo Design</div>
+              <h3>Nova Identity</h3>
+              <p>
+                Striking brand mark and logotype designed for a modern audience.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- ROW 2 -->
+        <a
+          href="./Assets/hoddie.png"
+          target="_blank"
+          class="work-item"
+          data-cat="apparel"
+        >
+          <div class="work">
+            <img src="./Assets/hoddie.png" alt="HODDIE Fashion" />
+            <div class="layer">
+              <div class="layer-tag">Apparel &amp; Fashion</div>
+              <h3>HODDIE Fashion</h3>
+              <p>
+                Editorial fashion photography art direction &amp; apparel visual
+                design.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/tshirt idea1.png"
+          target="_blank"
+          class="work-item"
+          data-cat="apparel"
+        >
+          <div class="work">
+            <img src="./Assets/tshirt idea1.png" alt="T-Shirt Concept" />
+            <div class="layer">
+              <div class="layer-tag">Apparel Design</div>
+              <h3>T-Shirt Concept</h3>
+              <p>
+                Custom apparel graphic — illustration, layout, and print-ready
+                design.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/Heaven.png"
+          target="_blank"
+          class="work-item work-large"
+          data-cat="poster"
+        >
+          <div class="work">
+            <img src="./Assets/Heaven.png" alt="Heaven Poster" />
+            <div class="layer">
+              <div class="layer-tag">Poster Design</div>
+              <h3>Heaven</h3>
+              <p>
+                Ethereal poster with surreal composition, depth, and dramatic
+                lighting.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/Falling dark.png"
+          target="_blank"
+          class="work-item"
+          data-cat="poster"
+        >
+          <div class="work">
+            <img
+              src="./Assets/Falling dark.png"
+              alt="Falling — Editorial Poster"
+            />
+            <div class="layer">
+              <div class="layer-tag">Editorial Poster</div>
+              <h3>Falling Dark</h3>
+              <p>
+                Dramatic editorial concept — high contrast, cinematic
+                atmosphere.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- ROW 3 -->
+        <a
+          href="./Assets/nike.png"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/nike.png" alt="Nike Branding" />
+            <div class="layer">
+              <div class="layer-tag">Brand Creative</div>
+              <h3>Nike Branding</h3>
+              <p>
+                Bold brand creative study with Nike visual language and energy.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/ktm.png"
+          target="_blank"
+          class="work-item"
+          data-cat="social"
+        >
+          <div class="work">
+            <img src="./Assets/ktm.png" alt="KTM Motorsport" />
+            <div class="layer">
+              <div class="layer-tag">Social Media</div>
+              <h3>KTM Motorsport</h3>
+              <p>
+                High-energy motorsport social graphic with bold typography and
+                impact.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/asx7.jpg"
+          target="_blank"
+          class="work-item"
+          data-cat="social"
+        >
+          <div class="work">
+            <img src="./Assets/asx7.jpg" alt="ASX7 Creative" />
+            <div class="layer">
+              <div class="layer-tag">Social Creative</div>
+              <h3>ASX7 Visual</h3>
+              <p>
+                Automotive creative with dynamic composition and cinematic mood.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/blith3.1.png"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/blith3.1.png" alt="Blith Logo Exploration" />
+            <div class="layer">
+              <div class="layer-tag">Logo Exploration</div>
+              <h3>Blith — Mark</h3>
+              <p>
+                Refined logomark iteration for Blith with tight grid and
+                geometry.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="./Assets/random edit1.jpg"
+          target="_blank"
+          class="work-item"
+          data-cat="social"
+        >
+          <div class="work">
+            <img src="./Assets/random edit1.jpg" alt="Photo Manipulation" />
+            <div class="layer">
+              <div class="layer-tag">Photo Edit</div>
+              <h3>Creative Retouch</h3>
+              <p>
+                Advanced photo manipulation — compositing, colour grading,
+                atmosphere.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://sageresearch.oneteamus.com/"
+          target="_blank"
+          class="work-item"
+          data-cat="branding"
+        >
+          <div class="work">
+            <img src="./Assets/Sage.png" alt="Sage Research" />
+            <div class="layer">
+              <div class="layer-tag">Web Design</div>
+              <h3>Sage Research</h3>
+              <p>
+                Website visual design and brand direction for Sage Research
+                platform.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <!-- TRAINING SECTION -->
+    <!-- CREATIVE PROCESS SECTION -->
+    <section id="process">
+      <div class="about-label">How I Work</div>
+      <h1 class="section-title">My Creative Process</h1>
+      <p class="section-subtext">
+        Every great design begins with understanding — and ends with impact.
+      </p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🔍</div>
+          <h3>Discover</h3>
+          <p>
+            I begin by deeply understanding the brief, the brand, and the target
+            audience — researching competitors and building visual references to
+            align on direction.
+          </p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">✏️</div>
+          <h3>Ideate</h3>
+          <p>
+            Rough sketches, mood boards, and early concept explorations. I
+            generate multiple directions before refining the strongest ideas
+            into polished concepts.
+          </p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">🎨</div>
+          <h3>Design</h3>
+          <p>
+            Bringing concepts to life in Photoshop and Illustrator — with
+            careful attention to typography, hierarchy, color, and spacing to
+            ensure visual harmony.
+          </p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">🚀</div>
+          <h3>Deliver</h3>
+          <p>
+            Final assets delivered in all required formats. I welcome feedback,
+            iterate, and ensure the design performs beautifully across all
+            platforms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
     <section id="training">
-        <p class="section__text">Certifications & Training</p>
-        <h1 class="title">Professional Development</h1>
+      <div class="about-label">Credentials</div>
+      <h1 class="section-title">Certifications</h1>
 
-        <div class="training-container">
-            <div class="training-card">
-                <div class="training-icon">🎓</div>
-                <h3>Python Django Full Stack Development</h3>
-                <p class="training-org">Luminar Technolab, Kochi</p>
-                <p class="training-desc">Comprehensive training in full-stack web development using Python Django framework, covering backend development, database management, and frontend integration.</p>
-            </div>
-
-            <div class="training-card">
-                <div class="training-icon">📜</div>
-                <h3>NACTET Certification</h3>
-                <p class="training-org">Luminar Technolab, Kochi</p>
-                <p class="training-desc">National Advanced Certification in Technology and Engineering Training, validating technical skills and knowledge in software development.</p>
-            </div>
-
-            <div class="training-card">
-                <div class="training-icon">💻</div>
-                <h3>Diploma in Computer Application</h3>
-                <p class="training-org">Bharat Sevak Samaj, Kollam</p>
-                <p class="training-desc">Comprehensive computer applications training covering fundamentals of computing, software applications, and basic programming. Achieved 75% marks.</p>
-            </div>
+      <div class="training-container">
+        <div class="training-card">
+          <div class="training-icon">🎓</div>
+          <h3>Python Django Full Stack Development</h3>
+          <p class="training-org">Luminar Technolab, Kochi</p>
+          <p class="training-desc">
+            Comprehensive training in full-stack web development — supporting my
+            understanding of web design contexts and digital product workflows.
+          </p>
         </div>
+
+        <div class="training-card">
+          <div class="training-icon">📜</div>
+          <h3>NACTET Certification</h3>
+          <p class="training-org">Luminar Technolab, Kochi</p>
+          <p class="training-desc">
+            National Advanced Certification validating skills in technology and
+            engineering — demonstrating technical literacy that enhances my
+            design practice.
+          </p>
+        </div>
+
+        <div class="training-card">
+          <div class="training-icon">💡</div>
+          <h3>Diploma in Computer Application</h3>
+          <p class="training-org">Bharat Sevak Samaj, Kollam</p>
+          <p class="training-desc">
+            Foundational computing training covering software applications and
+            fundamentals. Achieved 75% marks, building the technical groundwork
+            for my design career.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-        <p class="section__text">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <p class="contact-subtitle">Ready to bring your vision to life? Let's work together!</p>
+      <div class="about-label">Let's Create Together</div>
+      <h1 class="section-title">Get In Touch</h1>
+      <p class="contact-subtitle">
+        Have a project in mind? Looking for a designer to join your team? I'd
+        love to hear from you.
+      </p>
 
-        <div class="contact-info-upper-container">
-
-            <div class="contact-info-container">
-                <a href="mailto:jestinjohnson1@gmail.com">
-                    <img src="./Assets/email.png" class="icon contact-icon" alt="">
-                    <p>jestinjohnson1@gmail.com</p>
-                </a>
-            </div>
-
-            <div class="contact-info-container">
-                <a href="tel:+918590569016">
-                    <img src="./Assets/email.png" class="icon contact-icon" alt="">
-                    <p>+91 8590569016</p>
-                </a>
-            </div>
-
-            <div class="contact-info-container">
-                <a href="https://www.linkedin.com/in/heyjesty/" target="_blank">
-                    <img src="./Assets/linkedin.png" class="icon contact-icon" alt="">
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-
-            <div class="contact-info-container">
-                <a href="https://github.com/heyjesty" target="_blank">
-                    <img src="./Assets/linkedin.png" class="icon contact-icon" alt="">
-                    <p>GitHub</p>
-                </a>
-            </div>
-
-            <div class="contact-info-container">
-                <a href="https://www.instagram.com/moodygrammer/" target="_blank">
-                    <img src="./Assets/insta.png" class="icon contact-icon" alt="">
-                    <p>Instagram</p>
-                </a>
-            </div>
-
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:jestinjohnson1@gmail.com">jestinjohnson1@gmail.com</a>
         </div>
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h3>Phone</h3>
+          <a href="tel:+918590569016">+91 8590569016</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/heyjesty/" target="_blank"
+            >linkedin.com/in/heyjesty</a
+          >
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📸</div>
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/moodygrammer/" target="_blank"
+            >@moodygrammer</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>Copyright © 2026 Jestin G Johnson. All Rights Reserved.</p>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="./Assets/SIG.png" alt="JGJ Logo" />
+        </div>
+        <p class="footer-copy">
+          © 2026 Jestin G Johnson · Graphic Designer · All Rights Reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#profile">Home</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </footer>
 
     <script defer src="script.js"></script>
-
-</body>
+  </body>
 </html>
