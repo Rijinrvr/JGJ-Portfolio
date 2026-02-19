@@ -1619,3 +1619,112 @@
             justify-content: center;
         }
     }
+
+    /* -------------- MARQUEE STRIP (ENHANCED) -------------- */
+.marquee-strip {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    var(--bg-dark) 0%,
+    #1a1510 50%,
+    var(--bg-dark) 100%
+  );
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
+  box-shadow:
+    0 0 40px rgba(196, 125, 74, 0.08) inset,
+    0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Glowing fade edges */
+.marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-fade-left {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-dark), transparent);
+}
+
+.marquee-fade-right {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-dark), transparent);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+  padding: 1.4rem 0;
+  gap: 0;
+}
+
+.marquee-strip:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-item {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.marquee-item:hover {
+  color: var(--accent-light);
+}
+
+/* Glow pill on hover */
+.marquee-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  background: var(--accent-dim);
+  border: 1px solid transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.marquee-item:hover::before {
+  opacity: 1;
+  border-color: var(--accent-border);
+}
+
+.marquee-dot {
+  color: var(--accent);
+  font-size: 0.6rem;
+  opacity: 0.6;
+  padding: 0 0.5rem;
+  flex-shrink: 0;
+  animation: dotPulse 3s ease-in-out infinite;
+}
+
+.marquee-dot:nth-child(4n) { animation-delay: 0.5s; }
+.marquee-dot:nth-child(8n) { animation-delay: 1s; }
+.marquee-dot:nth-child(12n) { animation-delay: 1.5s; }
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.4); }
+}
